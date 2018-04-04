@@ -29,13 +29,13 @@ A step by step series of examples that tell you have to get a development env ru
 get_CheckList(str_Title, InitialLine, InitialColumn, SizeLimit, Options, ClearLine=True, Options_sets=[]):
 Description: Create a list of checkBox and multiple choices, return a list of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
 
-str_Title: Title of the list
-InitialLine: First line on screen where the list will br printed
-InitialColumn: Column on screen where the list will br printed 
-SizeLimit: Limit (quantity) in lines that will be shown on screen, navigation is by Up and Down arrows
-Options: List of itens to be printed
-ClearLine: (True or False) Clear entire line before print?
-Options_sets: (Optional) List of predefined choices (mark) of 1 (Checked) or 0 (Unchecked). The list must have same len of Options, and set 1 on index that you want show checked
+**str_Title**: Title of the list
+**InitialLine**: First line on screen where the list will br printed
+**InitialColumn**: Column on screen where the list will br printed 
+**SizeLimit**: Limit (quantity) in lines that will be shown on screen, navigation is by Up and Down arrows
+**Options**: List of itens to be printed
+**ClearLine**: (True or False) Clear entire line before print?
+**Options_sets**: (Optional) List of predefined choices (mark) of 1 (Checked) or 0 (Unchecked). The list must have same len of Options, and set 1 on index that you want show checked
 
 Return: List of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
 
@@ -52,13 +52,13 @@ Arrows:
 get_OptionList(str_Title, InitialLine, InitialColumn, SizeLimit, Options, ClearLine=True, Options_Index=-1)
 Description: Create a list of OptionBox and only one choice, return a list of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
 
-str_Title: Title of the list
-InitialLine: First line on screen where the list will br printed
-InitialColumn: Column on screen where the list will br printed 
-SizeLimit: Limit (quantity) in lines that will be shown on screen, navigation is by Up and Down arrows
-Options: List of itens to be printed
-ClearLine: (True or False) Clear entire line before print?
-Options_Index: (Optional) Index of predefined choice (mark) of 1 (Checked) or 0 (Unchecked). 
+**str_Title**: Title of the list
+**InitialLine**: First line on screen where the list will br printed
+**InitialColumn**: Column on screen where the list will br printed 
+**SizeLimit**: Limit (quantity) in lines that will be shown on screen, navigation is by Up and Down arrows
+**Options**: List of itens to be printed
+**ClearLine**: (True or False) Clear entire line before print?
+**Options_Index**: (Optional) Index of predefined choice (mark) of 1 (Checked) or 0 (Unchecked). 
 
 Return: List of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
 
@@ -110,6 +110,7 @@ lst_DataCentersFilter = [lst_tmp_hosts[i] for i in lst_indexes]
 for host in lst_DataCentersFilter:
     print host
 ```
+[![](https://github.com/faustobranco/checkbox/blob/master/Capture.PNG)](https://github.com/faustobranco/checkbox/blob/master/Capture.PNG)
 
 ## Versioning
 ```
