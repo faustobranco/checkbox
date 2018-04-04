@@ -24,7 +24,7 @@ A step by step series of examples that tell you have to get a development env ru
 
 ## Functions
 
-###get_CheckList
+### get_CheckList
 
 get_CheckList(str_Title, InitialLine, InitialColumn, SizeLimit, Options, ClearLine=True, Options_sets=[]):
 Description: Create a list of checkBox and multiple choices, return a list of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
@@ -47,7 +47,7 @@ Arrows:
     Down: Move to the item below
     
 
-###get_OptionList
+### get_OptionList
 
 get_OptionList(str_Title, InitialLine, InitialColumn, SizeLimit, Options, ClearLine=True, Options_Index=-1)
 Description: Create a list of OptionBox and only one choice, return a list of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
