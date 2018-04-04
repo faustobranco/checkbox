@@ -17,7 +17,7 @@ Developed and tested in Linux Ubuntu and Python 2.7
 A step by step series of examples that tell you have to get a development env running
 
 1. Create a folder called "checkbox" inside the folder of your project.
-2. Copy the checklist.py and "__init__.py" files to the checkbox folder
+2. Copy the checklist.py and `__init__.py` files to the checkbox folder
 3. Do class import for your project normally.
 
 * If the import is successful, a file called checklist.pyc must be created, this file (compiled python file) must be maintained.
@@ -72,7 +72,7 @@ Arrows:
 Additional notes about how to deploy this on a live system:
 Para deploy em ambiente de live:
 1) Create a folder called "checkbox" inside the folder of your project.
-2) Copy the checklist.pyc and "__init__.pyc" files to the checkbox folder
+2) Copy the checklist.pyc and `__init__.pyc` files to the checkbox folder
 
 Note: Unless you really have experience, do not install directly on /usr/local/lib/python2.7/dist-packages
 
