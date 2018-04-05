@@ -37,7 +37,7 @@ Description: Create a list of checkBox and multiple choices, return a list of 1 
 **ClearLine**: (True or False) Clear entire line before print?
 **Options_sets**: (Optional) List of predefined choices (mark) of 1 (Checked) or 0 (Unchecked). The list must have same len of Options, and set 1 on index that you want show checked
 
-Return: List of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
+Return: List of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter. -1 if canceled (Esc)
 
 Information:
 Ctrl + A To check entire list
@@ -45,6 +45,7 @@ Ctrl + N To uncheck entire list
 Arrows:
     Up: Move to the above item
     Down: Move to the item below
+    Esc: Cancel selection and return -1
     
 
 ### get_OptionList
@@ -60,19 +61,20 @@ Description: Create a list of OptionBox and only one choice, return a list of 1 
 **ClearLine**: (True or False) Clear entire line before print?
 **Options_Index**: (Optional) Index of predefined choice (mark) of 1 (Checked) or 0 (Unchecked). 
 
-Return: List of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
+Return: List of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter. -1 if canceled (Esc)
 
 Information:
 Arrows:
     Up: Move to the above item
     Down: Move to the item below
+    Esc: Cancel selection and return -1
 
 ## Deployment
 
 Additional notes about how to deploy this on a live system:
 Para deploy em ambiente de live:
-1) Create a folder called "checkbox" inside the folder of your project.
-2) Copy the checklist.pyc and `__init__.pyc` files to the checkbox folder
+1) Create a folder called "checklist" inside the folder of your project.
+2) Copy the checklist.pyc and `__init__.pyc` files to the checklist folder
 
 Note: Unless you really have experience, do not install directly on /usr/local/lib/python2.7/dist-packages
 
@@ -110,7 +112,7 @@ lst_DataCentersFilter = [lst_tmp_hosts[i] for i in lst_indexes]
 for host in lst_DataCentersFilter:
     print host
 ```
-[![](https://github.com/faustobranco/checkbox/blob/master/Capture.PNG)](https://github.com/faustobranco/checkbox/blob/master/Capture.PNG)
+[![](https://gitlab.fftech.info/top-dba/misc/blob/master/scripts/Python/checkbox/Capture.PNG)](https://gitlab.fftech.info/top-dba/misc/blob/master/scripts/Python/checkbox/Capture.PNG)
 
 ## Versioning
 ```
