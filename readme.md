@@ -112,7 +112,7 @@ lst_DataCentersFilter = [lst_tmp_hosts[i] for i in lst_indexes]
 for host in lst_DataCentersFilter:
     print host
 ```
-[![](https://gitlab.fftech.info/top-dba/misc/blob/master/scripts/Python/checkbox/Capture.PNG)](https://gitlab.fftech.info/top-dba/misc/blob/master/scripts/Python/checkbox/Capture.PNG)
+[![](https://github.com/faustobranco/checkbox/blob/master/Capture.PNG)](https://github.com/faustobranco/checkbox/blob/master/Capture.PNG)
 
 ## Versioning
 ```
