@@ -16,8 +16,8 @@ Developed and tested in Linux Ubuntu and Python 2.7
 
 A step by step series of examples that tell you have to get a development env running
 
-1. Create a folder called "checkbox" inside the folder of your project.
-2. Copy the checklist.py and `__init__.py` files to the checkbox folder
+1. Create a folder called "checklist" inside the folder of your project.
+2. Copy the checklist.py and `__init__.py` files to the checklist folder
 3. Do class import for your project normally.
 
 * If the import is successful, a file called checklist.pyc must be created, this file (compiled python file) must be maintained.
