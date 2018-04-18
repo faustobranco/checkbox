@@ -24,4 +24,27 @@ lst_DataCentersFilter = [lst_tmp_hosts[i] for i in lst_indexes]
 for host in lst_DataCentersFilter:
     print host
     
-    
+
+###################################################################################################################################
+
+lst_DataCentersCheck = obj_Checklist.get_CheckList('DC to restart', 5, 20, 20, lst_OptionDCs, ClearLine=True, Options_sets=[])
+
+if lst_DataCentersCheck == -1:
+    print 'Canceled 1'
+else:    
+    lst_indexes = [index for index in range(len(lst_DataCentersCheck)) if lst_DataCentersCheck[index] == 1]
+    lst_DataCentersFilter = [lst_OptionDCs[i] for i in lst_indexes]
+
+    lst_OptionHosts = [d['DC'] + ' - ' + d['IP'] for d in lst_Hosts if d['DC'] in lst_DataCentersFilter]
+
+    lst_HostsCheck = obj_Checklist.get_CheckList('Hosts to restart', 5, 120, 20, lst_OptionHosts, ClearLine=False, Options_sets=[])
+    if lst_HostsCheck == -1:
+        print 'Canceled 2'
+    else:    
+        lst_tmp_hosts = [d['IP'] for d in lst_Hosts if d['DC'] in lst_DataCentersFilter]
+        lst_indexes = [index for index in range(len(lst_HostsCheck)) if lst_HostsCheck[index] == 1]
+        lst_DataCentersFilter = [lst_tmp_hosts[i] for i in lst_indexes]
+
+        for host in lst_DataCentersFilter:
+            print host
+   
