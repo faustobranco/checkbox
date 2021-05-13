@@ -1,4 +1,4 @@
-from src import ebx_checklist
+import ebx_checklist
 
 obj_Checklist = ebx_checklist.Options()
 
