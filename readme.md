@@ -26,14 +26,15 @@ get_CheckList(str_Title, InitialLine, InitialColumn, SizeLimit, Options, ClearLi
 
 Description: Create a list of checkBox and multiple choices, return a list of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
 
-
-**str_Title**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Title of the list\
-**InitialLine**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First line on screen where the list will br printed.\
-**InitialColumn**: Column on screen where the list will br printed.\
-**SizeLimit**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Limit (quantity) in lines that will be shown on screen, navigation is by Up and Down arrows.\
-**Options**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List of itens to be printed.\
-**ClearLine**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(True or False) Clear entire line before print?.\
-**Options_sets**:  (Optional) List of predefined choices (mark) of 1 (Checked) or 0 (Unchecked). The list must have same len of Options, and set 1 on index that you want show checked.\
+| Parameter | Description |
+| --- | --- |
+|**str_Title**:|Title of the list|
+|**InitialLine**:|First line on screen where the list will br printed.|
+|**InitialColumn**:|Column on screen where the list will br printed.|
+|**SizeLimit**:|Limit (quantity) in lines that will be shown on screen, navigation is by Up and Down arrows.|
+|**Options**:|List of itens to be printed.|
+|**ClearLine**:|(True or False) Clear entire line before print?.|
+|**Options_sets**:|(Optional) List of predefined choices (mark) of 1 (Checked) or 0 (Unchecked). The list must have same len of Options, and set 1 on index that you want show checked.|
 
 
 Return: List of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter. -1 if canceled (Esc)
@@ -57,13 +58,15 @@ get_OptionList (str_Title, InitialLine, InitialColumn, SizeLimit, Options, Clear
 
 Description: Create a list of OptionBox and only one choice, return a list of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter
 
-**str_Title**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Title of the list\
-**InitialLine**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First line on screen where the list will br printed\
-**InitialColumn**:&nbsp;&nbsp;&nbsp;Column on screen where the list will br printed\
-**SizeLimit**&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Limit (quantity) in lines that will be shown on screen, navigation is by Up and Down arrows\
-**Options**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List of itens to be printed\
-**ClearLine**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(True or False) Clear entire line before print?\
-**Options_Index**: (Optional) Index of predefined choice (mark) of 1 (Checked) or 0 (Unchecked).\ 
+| Parameter | Description |
+| --- | --- |
+| **str_Title**: | Title of the list |
+| **InitialLine**: | First line on screen where the list will br printed |
+| **InitialColumn**: | Column on screen where the list will br printed |
+| **SizeLimit** | Limit (quantity) in lines that will be shown on screen, navigation is by Up and Down arrows |
+| **Options**: | List of itens to be printed |
+| **ClearLine**: | (True or False) Clear entire line before print? |
+| **Options_Index**: | (Optional) Index of predefined choice (mark) of 1 (Checked) or 0 (Unchecked). | 
 
 Return: List of 1 (check) and 0 (uncheck) for all itens (on same order) of Options parameter. -1 if canceled (Esc)
 
@@ -136,7 +139,7 @@ for host in lst_DataCentersFilter:
 
 Call python:
 ```
-python3 checkbox.py
+python3 ex_checkbox.py
 ```
 
 ```
@@ -174,7 +177,7 @@ python3 checkbox.py
 == Log Changes: 
 == Date:            2021-05-13
 == Author:          Fausto Branco
-== Version:         1.0.0
+== Version:         1.0.1
 == Description:     Initial Version
 =================================================================================
 ```
